@@ -1,4 +1,4 @@
-module github.com/mremotedec
+module github.com/qrxnz/mremotedec
 
 go 1.26.2
 

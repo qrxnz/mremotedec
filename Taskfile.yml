@@ -3,7 +3,7 @@ version: "3"
 tasks:
   build:
     cmds:
-      - go build -o gopuntes
+      - go build -o mremotedec
     desc: "Build the Go project"
 
   test:

@@ -11,11 +11,74 @@ A simple tool to decrypt mRemoteNG connection files (`.xml`).
 
 ## Installation
 
+### Binary Releases
+
+Pre-compiled binaries for Linux, Windows, and macOS are available on the [Releases](https://github.com/qrxnz/mremotedec/releases) page.
+
+### Using Go
+
+You can install `mremotedec` directly using `go install`:
+
 ```bash
 go install github.com/qrxnz/mremotedec@latest
 ```
 
-_(Note: Ensure your `go/bin` is in your PATH)_
+### Build from Source
+
+To build from source, you need to have [Go](https://go.dev/) installed.
+
+```bash
+git clone https://github.com/qrxnz/mremotedec.git
+cd mremotedec
+go build -o mremotedec .
+```
+
+Alternatively, if you have [Task](https://taskfile.dev/) installed, you can use:
+
+```bash
+task build
+```
+
+### Using Nix ❄️
+
+- **Run without installing:**
+
+```bash
+nix run github:qrxnz/mremotedec
+```
+
+- **Add to a Nix Flake:**
+
+Add input in your flake like
+
+```nix
+{
+ inputs = {
+   mremotedec = {
+     url = "github:qrxnz/mremotedec";
+     inputs.nixpkgs.follows = "nixpkgs";
+   };
+ };
+}
+```
+
+With the input added you can reference it directly
+
+```nix
+{ inputs, system, ... }:
+{
+  # NixOS
+  environment.systemPackages = [ inputs.mremotedec.packages.${pkgs.system}.default ];
+  # home-manager
+  home.packages = [ inputs.mremotedec.packages.${pkgs.system}.default ];
+}
+```
+
+- **Install imperatively:**
+
+```bash
+nix profile install github:qrxnz/mremotedec
+```
 
 ## Usage
 
