@@ -115,6 +115,14 @@ mRemoteNG uses different encryption methods based on its configuration:
 
 `mremotedec` automatically detects the encryption mode from the XML attributes (`BlockCipherMode`) and attempts to decrypt accordingly.
 
+## 🗒️ Credits
+
+### 🎨 Inspiration
+
+I was inspired by:
+
+- [gquere/mRemoteNG_password_decrypt](https://github.com/gquere/mRemoteNG_password_decrypt)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
