@@ -26,6 +26,12 @@
             go-task
           ];
         };
+        packages.default = pkgs.buildGoModule {
+          pname = "mremotedec";
+          version = "0.1.0";
+          src = self;
+          vendorHash = "";
+        };
       }
     );
 }
