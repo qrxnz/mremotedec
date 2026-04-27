@@ -2,7 +2,7 @@
 
 A simple tool to decrypt mRemoteNG connection files (`.xml`).
 
-## Features
+## 🧰 Features
 
 - Supports **CBC** and **GCM** decryption modes.
 - Handles **Full File Encryption**.
@@ -11,11 +11,11 @@ A simple tool to decrypt mRemoteNG connection files (`.xml`).
 
 ## Installation
 
-### Binary Releases
+### 📦 Binary Releases
 
 Pre-compiled binaries for Linux, Windows, and macOS are available on the [Releases](https://github.com/qrxnz/mremotedec/releases) page.
 
-### Using Go
+### 🐹Using Go
 
 You can install `mremotedec` directly using `go install`:
 
@@ -23,7 +23,7 @@ You can install `mremotedec` directly using `go install`:
 go install github.com/qrxnz/mremotedec@latest
 ```
 
-### Build from Source
+### 🏗️ Build from Source
 
 To build from source, you need to have [Go](https://go.dev/) installed.
 
@@ -39,7 +39,7 @@ Alternatively, if you have [Task](https://taskfile.dev/) installed, you can use:
 task build
 ```
 
-### Using Nix ❄️
+### ❄️ Using Nix
 
 - **Run without installing:**
 
@@ -80,9 +80,9 @@ With the input added you can reference it directly
 nix profile install github:qrxnz/mremotedec
 ```
 
-## Usage
+## 📖 Usage
 
-### Basic Usage
+### ⊹ ࣪ ˖ Basic Usage
 
 Decrypt a standard `confCons.xml` file using the default mRemoteNG password (`mR3m`):
 
@@ -90,7 +90,7 @@ Decrypt a standard `confCons.xml` file using the default mRemoteNG password (`mR
 mremotedec confCons.xml
 ```
 
-### Custom Password
+### 🔐 Custom Password
 
 If you set a custom password in mRemoteNG, use the `-p` or `-password` flag:
 
@@ -98,7 +98,7 @@ If you set a custom password in mRemoteNG, use the `-p` or `-password` flag:
 mremotedec -p "your_custom_password" confCons.xml
 ```
 
-### CSV Output
+### 🧾 CSV Output
 
 Export the decrypted connections to a CSV file:
 
@@ -106,7 +106,7 @@ Export the decrypted connections to a CSV file:
 mremotedec -csv confCons.xml > connections.csv
 ```
 
-## How it works
+## ❓ How it works
 
 mRemoteNG uses different encryption methods based on its configuration:
 
@@ -123,6 +123,6 @@ I was inspired by:
 
 - [gquere/mRemoteNG_password_decrypt](https://github.com/gquere/mRemoteNG_password_decrypt)
 
-## License
+## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
