@@ -9,7 +9,7 @@ A simple tool to decrypt mRemoteNG connection files (`.xml`).
 - Output in human-readable format or **CSV**.
 - Written in Go for easy portability.
 
-## Installation
+## 🛠️ Installation
 
 ### 📦 Binary Releases
 
