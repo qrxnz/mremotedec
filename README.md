@@ -41,15 +41,15 @@ task build
 
 ### ❄️ Using Nix
 
-- **Run without installing:**
+- **Run without installing**
 
 ```bash
 nix run github:qrxnz/mremotedec
 ```
 
-- **Add to a Nix Flake:**
+- **Add to a Nix Flake**
 
-Add input in your flake like
+Add input in your flake like:
 
 ```nix
 {
@@ -62,7 +62,7 @@ Add input in your flake like
 }
 ```
 
-With the input added you can reference it directly
+With the input added you can reference it directly:
 
 ```nix
 { inputs, system, ... }:
@@ -74,7 +74,7 @@ With the input added you can reference it directly
 }
 ```
 
-- **Install imperatively:**
+- **Install imperatively**
 
 ```bash
 nix profile install github:qrxnz/mremotedec
