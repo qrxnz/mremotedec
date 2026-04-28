@@ -31,7 +31,7 @@
           pname = "mremotedec";
           version = "0.1.0";
           src = self;
-          vendorHash = "sha256-1rWbo42EpOG/xy2+GexjqAdNnONcA9KP0qdwHEI4doo=";
+          vendorHash = "sha256-dA9Y9cVoGS5nD0fgKbufQ7EZeLs2yxIs3MT9iXnU0K4=";
         };
       }
     );
