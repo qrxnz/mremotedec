@@ -13,6 +13,7 @@ import (
 	"os"
 	"strings"
 
+	"github.com/charmbracelet/lipgloss"
 	"golang.org/x/crypto/pbkdf2"
 )
 
@@ -31,6 +32,29 @@ type Node struct {
 	Type     string `xml:"Type,attr"`
 	Nodes    []Node `xml:"Node"`
 }
+
+var (
+	cardStyle = lipgloss.NewStyle().
+			Border(lipgloss.RoundedBorder()).
+			BorderForeground(lipgloss.Color("62")).
+			Padding(0, 1).
+			MarginBottom(1)
+
+	nameStyle = lipgloss.NewStyle().
+			Bold(true).
+			Foreground(lipgloss.Color("212"))
+
+	labelStyle = lipgloss.NewStyle().
+			Bold(true).
+			Foreground(lipgloss.Color("62")).
+			Width(10)
+
+	valueStyle = lipgloss.NewStyle().
+			Foreground(lipgloss.Color("252"))
+
+	passwordStyle = lipgloss.NewStyle().
+			Foreground(lipgloss.Color("229"))
+)
 
 func pkcs7Unpad(data []byte, blockSize int) ([]byte, error) {
 	if len(data) == 0 {
@@ -118,6 +142,17 @@ func decrypt(mode string, data []byte, password []byte) (string, error) {
 	}
 }
 
+func renderConnection(node Node, decryptedPassword string) string {
+	lines := []string{
+		nameStyle.Render(node.Name),
+		labelStyle.Render("Hostname:") + valueStyle.Render(node.Hostname),
+		labelStyle.Render("Username:") + valueStyle.Render(node.Username),
+		labelStyle.Render("Password:") + passwordStyle.Render(decryptedPassword),
+	}
+
+	return cardStyle.Render(strings.Join(lines, "\n"))
+}
+
 func processNode(node Node, mode string, password []byte, writer *csv.Writer, csvFlag bool) {
 	if node.Type == "Connection" {
 		decryptedPassword := ""
@@ -131,8 +166,7 @@ func processNode(node Node, mode string, password []byte, writer *csv.Writer, cs
 		if csvFlag {
 			writer.Write([]string{node.Name, node.Hostname, node.Username, decryptedPassword})
 		} else {
-			fmt.Printf("Name: %s\nHostname: %s\nUsername: %s\nPassword: %s\n\n",
-				node.Name, node.Hostname, node.Username, decryptedPassword)
+			fmt.Println(renderConnection(node, decryptedPassword))
 		}
 	}
 
