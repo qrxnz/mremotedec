@@ -183,7 +183,7 @@ func main() {
 
 	if flag.NArg() < 1 {
 		fmt.Println("Usage: mremotedec [options] <config_file>")
-		os.Exit(1)
+		return
 	}
 
 	configFile := flag.Arg(0)
