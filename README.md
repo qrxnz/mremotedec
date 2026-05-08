@@ -4,9 +4,9 @@
 
 > A simple tool to decrypt mRemoteNG connection files (`.xml`).
 
-mremotedec started as a side idea while solving a VulnLab machine. After fighting with clunky tooling for long enough, I decided to write my own — minimal, clean, and built the way I wanted it to work.
+mremotedec started as a side idea while solving a [VulnLab](https://vulnlab.com) \[\*\] machine. After fighting with clunky tooling for long enough, I decided to write my own — minimal, clean, and built the way I wanted it to work.
 
-Big shoutout to [x4nt0n](https://x.com/x4nt0n?s=21) for solving the "Lock" machine together with me 💖
+Big shoutout to [x4nt0n](https://x.com/x4nt0n?s=21) for solving the "Lock" together with me 💖
 
 <img width="1186" height="752" alt="Image" src="https://github.com/user-attachments/assets/2f9a9cc5-eb60-44a3-afe9-3e0abc7ca85f" />
 
