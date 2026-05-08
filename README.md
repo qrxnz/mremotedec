@@ -1,5 +1,7 @@
 # mremotedec
 
+<img width="1186" height="752" alt="Image" src="https://github.com/user-attachments/assets/2f9a9cc5-eb60-44a3-afe9-3e0abc7ca85f" />
+
 A simple tool to decrypt mRemoteNG connection files (`.xml`).
 
 ## 🧰 Features
