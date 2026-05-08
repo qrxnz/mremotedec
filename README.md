@@ -8,7 +8,7 @@ mremotedec started as a side idea while solving a [VulnLab](https://vulnlab.com)
 
 Big shoutout to [x4nt0n](https://x.com/x4nt0n?s=21) for solving the "Lock" together with me 💖
 
-<img width="1186" height="752" alt="Image" src="https://github.com/user-attachments/assets/2f9a9cc5-eb60-44a3-afe9-3e0abc7ca85f" />
+<img width="1186" height="359" alt="Image" src="https://github.com/user-attachments/assets/72aed230-5807-4748-a60d-b723e65569cb" />
 
 ## 🧰 Features
 
