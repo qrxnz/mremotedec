@@ -29,7 +29,7 @@
         };
         packages.default = pkgs.buildGoModule {
           pname = "mremotedec";
-          version = "0.2.0";
+          version = "0.3.0";
           src = self;
           vendorHash = "sha256-bd97Kf7wx0VWhVOv76aSF++SYGdzwv9c1tReEFQP0fY=";
         };
