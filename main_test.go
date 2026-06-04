@@ -220,7 +220,9 @@ func TestDecrypt(t *testing.T) {
 	iv := make([]byte, aes.BlockSize)
 	padLen := aes.BlockSize - (len(plaintext) % aes.BlockSize)
 	padded := append([]byte(plaintext), make([]byte, padLen)...)
-	for i := len(plaintext); i < len(padded); i++ { padded[i] = byte(padLen) }
+	for i := len(plaintext); i < len(padded); i++ {
+		padded[i] = byte(padLen)
+	}
 	ciphertextCBC := make([]byte, len(padded))
 	cipher.NewCBCEncrypter(blockCBC, iv).CryptBlocks(ciphertextCBC, padded)
 	fullDataCBC := append(iv, ciphertextCBC...)
