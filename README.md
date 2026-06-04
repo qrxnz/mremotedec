@@ -19,8 +19,7 @@
     </a>
     <br>
     </div>
-   </h3>
-   <br>
+</h3>
 
 > A simple tool to decrypt mRemoteNG connection files (`.xml`).
 
