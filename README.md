@@ -1,6 +1,26 @@
 # mremotedec
 
-[![Go Workflow](https://github.com/qrxnz/mremotedec/actions/workflows/go.yml/badge.svg)](https://github.com/qrxnz/mremotedec/actions/workflows/go.yml)
+<h3 align="center">
+  <div>
+    <a href="https://github.com/qrxnz/mremotedec/issues">
+        <img src="https://img.shields.io/github/issues/qrxnz/mremotedec?color=fab387&labelColor=303446&style=for-the-badge">
+    </a>
+    <a href="https://github.com/qrxnz/mremotedec/stargazers">
+        <img src="https://img.shields.io/github/stars/qrxnz/mremotedec?color=ca9ee6&labelColor=303446&style=for-the-badge">
+    </a>
+    <a href="https://github.com/qrxnz/mremotedec">
+        <img src="https://img.shields.io/github/repo-size/qrxnz/mremotedec?color=ea999c&labelColor=303446&style=for-the-badge">
+    </a>
+    <a href="https://github.com/qrxnz/mremotedec/actions/workflows/go.yml">
+        <img src="https://img.shields.io/github/actions/workflow/status/qrxnz/mremotedec/go.yml?color=a6e3a1&labelColor=303446&style=for-the-badge&label=Go%20Workflow">
+    </a>
+    <a href="https://github.com/qrxnz/mremotedec/blob/main/.github/LICENCE">
+        <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=ca9ee6&colorA=313244&colorB=cba6f7"/>
+    </a>
+    <br>
+    </div>
+   </h3>
+   <br>
 
 > A simple tool to decrypt mRemoteNG connection files (`.xml`).
 
