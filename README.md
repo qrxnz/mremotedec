@@ -8,9 +8,6 @@
     <a href="https://github.com/qrxnz/mremotedec/stargazers">
         <img src="https://img.shields.io/github/stars/qrxnz/mremotedec?color=ca9ee6&labelColor=303446&style=for-the-badge">
     </a>
-    <a href="https://github.com/qrxnz/mremotedec">
-        <img src="https://img.shields.io/github/repo-size/qrxnz/mremotedec?color=ea999c&labelColor=303446&style=for-the-badge">
-    </a>
     <a href="https://github.com/qrxnz/mremotedec/actions/workflows/go.yml">
         <img src="https://img.shields.io/github/actions/workflow/status/qrxnz/mremotedec/go.yml?color=a6e3a1&labelColor=303446&style=for-the-badge&label=Go%20Workflow">
     </a>
