@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/qrxnz/mremotedec/compare/v0.4.0...v0.5.0) (2026-07-11)
+
+
+### Features
+
+* add workflow to update flake.lock weekly ([8e6cd6a](https://github.com/qrxnz/mremotedec/commit/8e6cd6afac36df95b746421bb58d2267d1b7f540))
+
 ## [0.4.0](https://github.com/qrxnz/mremotedec/compare/v0.3.2...v0.4.0) (2026-07-11)
 
 
