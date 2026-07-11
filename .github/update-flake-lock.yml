@@ -1,0 +1,15 @@
+# Weekly PR updating flake.lock (Dependabot has no native Nix support)
+name: ❄️ Update flake.lock
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 03 * * 1" # At 03:00 on Monday
+jobs:
+  update-flake-lock:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/update-flake-lock@main
+        with:
+          pr-title: "chore: update flake.lock"
